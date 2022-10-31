@@ -1,0 +1,101 @@
+body {
+    margin: 0px;
+    background-color: #ccc;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#header {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: flex-start;
+    box-shadow: 4px 0 15px 4px rgb(139, 0, 0);
+}
+#container {
+    margin: 0 200 0 200;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 10px 4px 35px 0px black, -10px 4px 35px 0px black;
+
+}
+
+h1 {
+    text-decoration: overline;
+    padding-left: 30px;
+    -webkit-animation:move 8s linear infinite;
+    -moz-animation:move 8s linear infinite;
+    animation:move 8s linear infinite;
+    transition-timing-function: ease-in-out;
+}
+h2 {
+    text-decoration: overline;
+    color: #fff;
+    padding:20px;
+}
+#title {
+    background-color: darkblue;
+    box-shadow: 4px 0 15px 4px rgb(139, 0, 0);
+    -webkit-animation:grow 4s linear infinite;
+    -moz-animation:grow 4s linear infinite;
+    animation:grow 4s linear infinite;
+}
+#footer {
+    height: 150px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding:30px;
+    font-size: 2rem;
+}
+#logo {
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+#banana {
+    -webkit-animation:grow 4s linear infinite;
+    -moz-animation:grow 4s linear infinite;
+    animation:grow 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+@-moz-keyframes move { 
+    100% { -moz-transform: translate(1200px, 0px); } 
+}
+@-webkit-keyframes move { 
+    100% { -webkit-transform: translate(1200px, 0px); } 
+}
+@keyframes move { 
+    100% { 
+        -webkit-transform: translate(1200px, 0px);
+        transform: translate(1200px, 0px);
+    } 
+}
+
+@-moz-keyframes grow { 
+    100% { -moz-transform: scale(1.5); } 
+}
+@-webkit-keyframes grow { 
+    100% { -webkit-transform: scale(1.5); } 
+}
+@keyframes grow { 
+    100% { 
+        -webkit-transform: scale(1.5); 
+        transform: scale(1.5);
+    } 
+}
